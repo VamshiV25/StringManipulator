@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator Result Page</title>
+    <title>String Result Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
         div.A {
@@ -24,7 +24,8 @@
         <hr><div align="center">
         <div class="mb-2"><h6>The String Entered is <span class="text-danger">{{$str}}</span></h6></div>
         <div class="mb-2"><h6>The <span class="text-danger">{{$opr}}</span> Operation is done</h6></div>
-        </div><hr>
+        </div>
+        <hr>
         <div align="center" class="mb-2"><h5>The Result is <span class="text-danger">{{$result}}</span></h5></div>
         <br>
         <div align="center">

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\StringController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,25 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/string/form', function () {
-    return view('string.form');
-});
+Route::get('/string/form',[stringcontroller::class,'form']);
 
-Route::get('/string/result', function () {
-    $str = request()->get('str');
-    $opr = request()->get('opr');
-    $result = null;
+Route::get('/string/result',[stringcontroller::class,'result']);
 
-     if($opr == "CountLetter")
-        $result = strlen($str);
-        else if($opr == "CountWord")
-        $result = str_word_count($str);
-        else if($opr == "StringReverse")
-       $result = strrev($str);
+Route::get('/string/logs',[stringcontroller::class,'logs']);
 
-    return view('string.result')
-    ->with('result',$result)
-    ->with('str',$str)
-    ->with('opr',$opr);
-
-});
+Route::get('/string/queries',[stringController::class,'queries']);

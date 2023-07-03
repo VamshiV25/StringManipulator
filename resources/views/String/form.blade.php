@@ -20,7 +20,7 @@
 <body class="card text-bg-info mb-3 mx-auto">
     <div class="A">
     <section class="container bg-danger-subtle p-2 my-3 text-Red">
-        <h1 align="center">String Manipulator</h1></section><br>
+        <h1 align="center">String Manipulator &nbsp;<a href="/string/logs">Logs</a></h1></section><br>
     <section class="container bg-danger-subtle p-3 ">
             <form action="/string/result" method="get">
                 <div class="row mb-3">
@@ -34,8 +34,8 @@
                     <label for="inputState" class="pure-input-rounded"><h5>Operation :</h5></label>
                     <select class="form-select" name="opr" id="autoSizingSelect">
                         <option selected>Choose</option>
-                        <option value="CountLetter">No Of Letters</option>
-                        <option value="CountWord">No Of Words</option>
+                        <option value="CountLetter">Number Of Letters</option>
+                        <option value="CountWord">Number Of Words</option>
                         <option value="StringReverse">String Reverse</option>
                     </select>
                 </div><br>
